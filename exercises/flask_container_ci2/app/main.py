@@ -27,13 +27,13 @@ def matrix(matrix):
     return matrix.replace('', ' ').replace(' n ', '\n').strip()
 
 
-@app.route("/matrix/<matrix>/<column_number>", methods=['GET'])
+@app.route("/matrix/<matrix>/column/<column_number>", methods=['GET'])
 def column(matrix, column_number):
     # TODO: return column based on given column number
     pass
 
 
-@app.route("/matrix/<matrix>/<row_number>", methods=['GET'])
+@app.route("/matrix/<matrix>/row/<row_number>", methods=['GET'])
 def row(matrix, row_number):
     # TODO: return row based on given row number
     pass
