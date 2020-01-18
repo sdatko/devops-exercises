@@ -38,17 +38,17 @@ If any of the following steps is not working, it is expected from you to fix the
     4 5 6
     7 8 9
 
-* /matrix/\<matrix\>/\<column_number\> 
+* /columns/\<matrix\>/\<column_number\>
 
-    for example, for /matrix/123n456n789/2 the user will get:
+    for example, for /columns/123n456n789/2 the user will get:
 
     2
     5
     8
 
-* /matrix/\<matrix\>/\<row_number\> 
+* /rows/\<matrix\>/\<row_number\>
 
-    for example, for /matrix/123n456n789/1 the user will get:
+    for example, for /rows/123n456n789/1 the user will get:
 
     1 2 3 
 
