@@ -35,8 +35,9 @@ def column(matrix, column_number):
 
 @app.route("/matrix/<matrix>/row/<row_number>", methods=['GET'])
 def row(matrix, row_number):
-    # TODO: return row based on given row number
-    pass
+    row_index = int(row_number) - 1
+    return matrix.split('n')[row_index].replace('', ' ').strip()
+
 
 
 def pretty_json(arg):
