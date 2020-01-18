@@ -30,27 +30,33 @@ If any of the following steps is not working, it is expected from you to fix the
 
 4. You should be able to access any of the resources and get the following data:
 
-* /matrix/\<matrix\>
+* `/matrix/<matrix>`
 
-    for example, for /matrix/123n456n789 the user will get:
+    for example, for `/matrix/123n456n789` the user will get:
 
+    ```
     1 2 3
     4 5 6
     7 8 9
+    ```
 
-* /columns/\<matrix\>/\<column_number\>
+* `/columns/<matrix>/<column_number>`
 
-    for example, for /columns/123n456n789/2 the user will get:
+    for example, for `/columns/123n456n789/2` the user will get:
 
+    ```
     2
     5
     8
+    ```
 
-* /rows/\<matrix\>/\<row_number\>
+* `/rows/<matrix>/<row_number>`
 
-    for example, for /rows/123n456n789/1 the user will get:
+    for example, for `/rows/123n456n789/1` the user will get:
 
+    ```
     1 2 3
+    ```
 
 ## Containers
 

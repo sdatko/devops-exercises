@@ -18,7 +18,7 @@ def index():
             "row": "/rows/<matrix>/<row_number>",
         },
         "current_uri": "/",
-        "example": "/matrix/'123n456n789'",
+        "example": "/matrix/123n456n789",
     })
 
 
