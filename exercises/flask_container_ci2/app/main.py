@@ -9,7 +9,7 @@ import json
 app = Flask(__name__)
 
 
-@app.routee("/", methods=['GET'])
+@app.route("/", methods=['GET'])
 def index():
     return pretty_json({
         "resources": {
