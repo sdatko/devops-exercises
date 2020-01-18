@@ -29,8 +29,8 @@ def matrix(matrix):
 
 @app.route("/matrix/<matrix>/column/<column_number>", methods=['GET'])
 def column(matrix, column_number):
-    # TODO: return column based on given column number
-    pass
+    column_index = int(column_number) - 1
+    return '\n'.join([row[column_index] for row in matrix.split('n')])
 
 
 @app.route("/matrix/<matrix>/row/<row_number>", methods=['GET'])
