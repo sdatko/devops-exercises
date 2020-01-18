@@ -104,7 +104,7 @@ def verify_dimensions(matrix):
 
 def get_dimensions(matrix):
     rows = len(matrix.split('n'))
-    columns = len(matrix.split('n')[0].split())
+    columns = len(matrix.split('n')[0])
 
     return rows, columns
 
