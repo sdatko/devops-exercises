@@ -27,13 +27,13 @@ def matrix(matrix):
     return matrix.replace('', ' ').replace(' n ', '\n').strip()
 
 
-@app.route("/matrix/<matrix>/column/<column_number>", methods=['GET'])
+@app.route("/columns/<matrix>/<column_number>", methods=['GET'])
 def column(matrix, column_number):
     column_index = int(column_number) - 1
     return '\n'.join([row[column_index] for row in matrix.split('n')])
 
 
-@app.route("/matrix/<matrix>/row/<row_number>", methods=['GET'])
+@app.route("/rows/<matrix>/<row_number>", methods=['GET'])
 def row(matrix, row_number):
     row_index = int(row_number) - 1
     return matrix.split('n')[row_index].replace('', ' ').strip()
