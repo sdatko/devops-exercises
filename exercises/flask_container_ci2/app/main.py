@@ -24,8 +24,7 @@ def index():
 
 @app.route("/matrix/<matrix>", methods=['GET'])
 def matrix(matrix):
-    # TODO: return matrix, each row in a new line
-    pass
+    return matrix.replace('', ' ').replace(' n ', '\n').strip()
 
 
 @app.route("/matrix/<matrix>/<column_number>", methods=['GET'])
