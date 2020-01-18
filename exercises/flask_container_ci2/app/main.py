@@ -39,7 +39,6 @@ def row(matrix, row_number):
     return matrix.split('n')[row_index].replace('', ' ').strip()
 
 
-
 def pretty_json(arg):
     response = make_response(json.dumps(arg, sort_keys=True, indent=4))
     response.headers['Content-type'] = "application/json"
