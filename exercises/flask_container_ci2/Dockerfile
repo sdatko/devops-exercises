@@ -2,8 +2,13 @@ FROM ubuntu:18.04
 COPY app/main.py requirements.txt /app/
 RUN apt-get update && \
     apt-get --assume-yes dist-upgrade && \
-    apt-get --assume-yes install locales python3-minimal python3-pip && \
+    apt-get --assume-yes install --no-install-recommends \
+        locales='2.27-3ubuntu1' \
+        python3-minimal='3.6.7-1~18.04' \
+        python3-pip='9.0.1-2.3~ubuntu1.18.04.1' \
+        && \
     apt-get clean && \
+    rm -rf /var/lib/apt/lists/* && \
     locale-gen 'en_US.UTF-8' && \
     pip3 install --no-cache -r /app/requirements.txt
 ENV LC_ALL='en_US.UTF-8' \
