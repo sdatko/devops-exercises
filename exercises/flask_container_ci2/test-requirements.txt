@@ -1,4 +1,5 @@
 bashate
+coverage
 flake8
 pytest
 requests
