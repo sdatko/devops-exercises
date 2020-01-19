@@ -1,3 +1,4 @@
+bashate
 flake8
 pytest
 requests
