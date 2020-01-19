@@ -1,0 +1,16 @@
+name: CI
+
+on: [push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    container:
+      image: themattrix/tox
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2.0.0
+    - name: Tests
+      run: |
+          cd exercises/flask_container_ci2/
+          tox -v -e unit,pep8,bashate,functional
