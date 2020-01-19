@@ -1,3 +1,5 @@
+![](https://github.com/sdatko/devops-exercises/workflows/CI/badge.svg)
+
 Your mission, should you choose to accept it, involves developing an app, containerize it and set up a CI for it.
 Please read carefully all the instructions.
 
