@@ -13,4 +13,4 @@ jobs:
     - name: Tests
       run: |
           cd exercises/flask_container_ci2/
-          tox -v -e unit,pep8,bashate,functional
+          tox -v
