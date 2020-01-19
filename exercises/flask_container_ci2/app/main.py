@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 # coding=utf-8
 
+import signal
+
 from flask import abort
 from flask import Flask
 from flask import make_response
@@ -108,6 +110,12 @@ def get_dimensions(matrix):
 
     return rows, columns
 
+
+def handle_sigterm(*args):
+    raise KeyboardInterrupt()
+
+
+signal.signal(signal.SIGTERM, handle_sigterm)
 
 if __name__ == "__main__":
     app.run(port=5000)
